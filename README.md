@@ -1,6 +1,6 @@
 # Bengkel Motor Rogodono
 
-Website sederhana untuk Bengkel Motor Rogodono di Desa Rogodono, Kecamatan Buayan, Kebumen. Situs ini berisi informasi layanan, alamat, serta formulir kontak.
+Website profesional untuk Bengkel Motor Rogodono di Desa Rogodono, Kecamatan Buayan, Kebumen. Situs ini berisi profil bengkel, layanan, galeri, testimoni pelanggan, FAQ, alamat, serta formulir kontak.
 
 ## Cara Menjalankan
 
