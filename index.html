@@ -8,6 +8,16 @@
       name="description"
       content="Bengkel Motor Rogodono melayani servis, perbaikan, dan pemasangan suku cadang berkualitas di Rogodono, Buayan, Kebumen."
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -15,13 +25,36 @@
       <h1>Bengkel Motor Rogodono</h1>
       <nav>
         <ul>
-          <li><a href="#beranda">Beranda</a></li>
-          <li><a href="#tentang">Tentang</a></li>
-          <li><a href="#layanan">Layanan</a></li>
-          <li><a href="#galeri">Galeri</a></li>
-          <li><a href="#testimoni">Testimoni</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#kontak">Kontak</a></li>
+          <li>
+            <a href="#beranda"><i class="fas fa-home"></i> Beranda</a>
+          </li>
+          <li>
+            <a href="#tentang"><i class="fas fa-info-circle"></i> Tentang</a>
+          </li>
+          <li>
+            <a href="#layanan"><i class="fas fa-concierge-bell"></i> Layanan</a>
+          </li>
+          <li>
+            <a href="#sparepart"><i class="fas fa-cog"></i> Sparepart</a>
+          </li>
+          <li>
+            <a href="#panggilan"><i class="fas fa-motorcycle"></i> Servis Panggilan</a>
+          </li>
+          <li>
+            <a href="#galeri"><i class="fas fa-image"></i> Galeri</a>
+          </li>
+          <li>
+            <a href="#testimoni"><i class="fas fa-comment-dots"></i> Testimoni</a>
+          </li>
+          <li>
+            <a href="#faq"><i class="fas fa-question-circle"></i> FAQ</a>
+          </li>
+          <li>
+            <a href="#pembayaran"><i class="fas fa-wallet"></i> Pembayaran</a>
+          </li>
+          <li>
+            <a href="#kontak"><i class="fas fa-address-book"></i> Kontak</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -35,6 +68,27 @@
       <a class="cta-button" href="https://wa.me/628123456789" target="_blank"
         >Hubungi via WhatsApp</a
       >
+    </section>
+
+    <section id="keunggulan">
+      <h2>Keunggulan Kami</h2>
+      <div class="features">
+        <div class="feature">
+          <i class="fas fa-tools"></i>
+          <h3>Teknisi Profesional</h3>
+          <p>Bersertifikat dan berpengalaman.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-cogs"></i>
+          <h3>Sparepart Original</h3>
+          <p>Produk bergaransi dan berkualitas.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-clock"></i>
+          <h3>Servis Cepat</h3>
+          <p>Perbaikan selesai tepat waktu.</p>
+        </div>
+      </div>
     </section>
 
     <section id="tentang">
@@ -55,6 +109,70 @@
         <li>Penggantian suku cadang</li>
         <li>Cuci motor</li>
       </ul>
+    </section>
+
+    <section id="sparepart">
+      <h2>Sparepart</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>Harga</th>
+            <th>Keterangan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><i class="fas fa-plug"></i> Busi</td>
+            <td>Rp20.000</td>
+            <td>Busi standar untuk berbagai tipe motor</td>
+          </tr>
+          <tr>
+            <td><i class="fas fa-oil-can"></i> Oli Mesin 1L</td>
+            <td>Rp45.000</td>
+            <td>Oli sintetik SAE 10W-40</td>
+          </tr>
+          <tr>
+            <td><i class="fas fa-stop"></i> Kampas Rem</td>
+            <td>Rp35.000</td>
+            <td>Kampas rem belakang</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="panggilan">
+      <h2>Servis Panggilan Online</h2>
+      <p>
+        Isi formulir berikut untuk memesan servis panggilan. Biaya perjalanan
+        Rp10.000 per km.
+      </p>
+      <form id="service-form">
+        <label>Nama:<br /><input type="text" name="nama" required /></label>
+        <label>Alamat:<br /><input type="text" name="alamat" required /></label>
+        <label>
+          Jarak dari bengkel (km):<br />
+          <input type="number" id="jarak" name="jarak" min="0" step="0.1" required />
+        </label>
+        <p id="biaya-perjalanan">Biaya perjalanan: Rp0</p>
+        <label>
+          Layanan:<br />
+          <select name="layanan">
+            <option>Servis rutin</option>
+            <option>Ganti oli</option>
+            <option>Perbaikan mesin</option>
+          </select>
+        </label>
+        <label>
+          Metode Pembayaran:<br />
+          <select name="pembayaran">
+            <option>Tunai</option>
+            <option>Transfer Bank</option>
+            <option>E-Wallet</option>
+          </select>
+        </label>
+        <button type="submit">Kirim Permintaan</button>
+      </form>
     </section>
 
     <section id="galeri">
@@ -103,12 +221,40 @@
       </details>
     </section>
 
+    <section id="pembayaran">
+      <h2>Metode Pembayaran</h2>
+      <ul>
+        <li><i class="fas fa-money-bill-wave"></i> Tunai di bengkel atau saat servis panggilan</li>
+        <li>
+          <i class="fas fa-university"></i> Transfer Bank:
+          <ul>
+            <li>BCA 123456789 a.n. Bengkel Rogodono</li>
+            <li>Mandiri 987654321 a.n. Bengkel Rogodono</li>
+          </ul>
+        </li>
+        <li>
+          <i class="fas fa-wallet"></i> E-Wallet:
+          <ul>
+            <li>OVO 0812-3456-789</li>
+            <li>GoPay 0812-3456-789</li>
+            <li>Dana 0812-3456-789</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
     <section id="kontak">
       <h2>Kontak</h2>
-      <p>Alamat: Rogodono, Buayan, Kebumen, Jawa Tengah</p>
-      <p>Telepon/WhatsApp: <a href="tel:+628123456789">0812-3456-789</a></p>
       <p>
-        Email:
+        <i class="fas fa-map-marker-alt"></i> Alamat: Rogodono, Buayan,
+        Kebumen, Jawa Tengah
+      </p>
+      <p>
+        <i class="fas fa-phone"></i> Telepon/WhatsApp:
+        <a href="tel:+628123456789">0812-3456-789</a>
+      </p>
+      <p>
+        <i class="fas fa-envelope"></i> Email:
         <a href="mailto:bengkelrogodono@example.com"
           >bengkelrogodono@example.com</a
         >
